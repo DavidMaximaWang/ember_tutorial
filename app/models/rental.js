@@ -16,6 +16,8 @@ export default class RentalModel extends Model{
     @attr bedroom;
     @attr description;
 
+    //The @attr decorate the attributes of the model. e.g. title in model.attributes
+
     get type (){
         if (COMMUNITY_CATEGORIES.includes(this.category)){
             return 'Community';

@@ -3,10 +3,16 @@
     <p>We hope you find exactly what you're looking for in a place to stay.</p>
     <LinkTo class="button" @route="about">About Us</LinkTo>
 </Jumbo>
-<div class="rentals">
+{{!-- <div class="rentals">
+    <label for="">
+        <span> Where would you like to stay?</span>
+        <input type="text" class="light"></label>
     <ul class="results">
         {{#each @model as |rental|}}
-        <li> <Rental @rental={{rental}} /> </li>
+        <li>
+            <Rental @rental={{rental}} />
+        </li>
         {{/each}}
     </ul>
-</div>
+</div> --}}
+<Rentals @rentals={{@model}}/>
